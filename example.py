@@ -1,4 +1,4 @@
-from generate_equations import generator_lite_api
+from lite_extension import generator_lite_api
 
 EQGen = generator_lite_api.EQGeneratorLITE()
 
