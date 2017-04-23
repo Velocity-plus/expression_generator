@@ -140,7 +140,7 @@ class EQGeneratorLITE():
             reducible = '1'
         else:
             reducible = '0'
-        print(reducible)
+
         # Creating a list to easily communicate with the api
         link = ['function=multi_generate',
                 'difficulty_min=' + str(difficulty[0]),

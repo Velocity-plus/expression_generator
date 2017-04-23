@@ -23,6 +23,6 @@ generated = EQGen.generate(n_gen=100,
                  unique=True,
                  reducible=True)
 
-print(generated)
+
 for equation in generated:
     print(equation)
