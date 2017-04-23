@@ -22,6 +22,6 @@ Introduction
 Documentation
 ---------------------
   #### **Getting started**
-  - Download the latest <a href="https://github.com/Velocity-plus/threaded_mysql/releases">release</a> 
+  - Download the latest <a href="https://github.com/Velocity-plus/equation_generator/releases">release</a> 
   - Open up example.py to see clear examples on how to use the library
  
