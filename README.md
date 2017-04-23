@@ -17,7 +17,7 @@ Introduction
   This respository is a lite api wrapper written in python to generate mathematical reducible equations from http://dreamaboutnow.com/projects/equation_generator
    
   To generate random equations there are a lot of variables and decision factors that plays a role
-  in the generation of the equations.
+  in the generation of the equations, which you can manipulate with this library.
 
 Documentation
 ---------------------
