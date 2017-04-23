@@ -14,19 +14,19 @@ last update *23-04-2017*
 
 Introduction
 -----------------------------
-   This project contains code to supposedly generate mathematical reducible equations.
-   It is not guaranteed that all equations generated are reducible, since they are randomly generated.
-   This flaw can be solved by setting the correct parameter in 'FUNCTION <generate>' from 'CLASS ReducibleEQGen'
+  This respository is a lite api wrapper written in python to generate mathematical reducible equations from http://dreamaboutnow.com/projects/equation_generator
    
   To generate random equations there are a lot of variables and decision factors that plays a role
   in the generation of the equations.
 
 Documentation
 ---------------------
+  #### **Getting started**
+  
   The equation generator can be manipulated, so the generation is not only determined by randomness.
   You can change the following parameters, which are listed below:
-  
-  Parameters of function generate and multi_generate:
+ ```python
+  #Parameters of function generate and multi_generate:
         :type int     :param n_gen: n
         :type tuple   :param difficulty: (min n, max n)
         :type tuple   :param exponent: min n, max n)
@@ -39,6 +39,7 @@ Documentation
         :type tuple   :param division_operators: = (min n, max n)
         :type boolean :param unique: boolean
         :type boolean :param reducible: boolean
+  ```      
 
   The listed variables that takes (min, n, max n) should be understood as the minimum possible number 
   the computer can generate and max n as the maximum number that can be generated (determined by randomization).
