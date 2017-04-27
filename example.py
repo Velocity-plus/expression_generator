@@ -5,6 +5,8 @@ EQGen = generator_lite_api.EQGeneratorLITE()
 
 # If you need to read the documentation
 doc = 0
+convert_latex = False
+
 if doc:
     help(generator_lite_api)
 
@@ -25,4 +27,8 @@ generated = EQGen.generate(n_gen=100,
 
 
 for equation in generated:
-    print(equation)
+    if convert_latex:
+        print(EQGen.convert_latex(equation))
+    else:
+        print(equation)
+
