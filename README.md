@@ -1,4 +1,4 @@
-Reducible Equation Generator
+Reducible Expression Generator
 ===================== 
 Version 1.0.0
 last update *23-04-2017*
@@ -14,10 +14,10 @@ last update *23-04-2017*
 
 Introduction
 -----------------------------
-  This respository is a lite api wrapper written in python to generate mathematical reducible equations from http://dreamaboutnow.com/projects/equation_generator
+  This respository is a lite api wrapper written in python to generate mathematical reducible expressions from http://dreamaboutnow.com/projects/expression_generator
    
-  To generate random equations there are a lot of variables and decision factors that plays a role
-  in the generation of the equations, which you can manipulate with this library.
+  To generate random expressions there are a lot of variables and decision factors that plays a role
+  in the generation of the expressions, which you can manipulate with this library.
 
 Documentation
 ---------------------
