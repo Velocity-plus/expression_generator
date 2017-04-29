@@ -1,7 +1,7 @@
 """
 
 
-Name: Equation Generator
+Name: Expression Generator
 Version: 1.0.0 (stable)
 Author: Frederik Munk Zino
 Github: Velocity-plus (https://github.com/Velocity-plus)
@@ -10,13 +10,13 @@ Github: Velocity-plus (https://github.com/Velocity-plus)
 Documentation:
 
 - Idea
-   This document contains code to supposedly generate mathematical reducible equations.
-   It is not guaranteed that all equations generated are reducible, since they are randomly generated.
+   This document contains code to supposedly generate mathematical reducible expressions.
+   It is not guaranteed that all expressions generated are reducible, since they are randomly generated.
    This flaw can be solved by setting the correct parameter in 'FUNCTION <generate>' from 'CLASS ReducibleEQGen'
 
-- Generating equations
-  To generate random equations there are a lot of variables and decision factors that plays a role
-  in the generation of the equations.
+- Generating expressions
+  To generate random expressions there are a lot of variables and decision factors that plays a role
+  in the generation of the expressions.
 
   The equation generator can be manipulated, so the generation is not only determined by randomness.
   You can change the following parameters, which are listed below:
@@ -42,7 +42,7 @@ Documentation:
     => Possible outputs: 1, 2, 3, 4, 5, 6 
 
   Defintion of variable:
-    n_gen: How many equations should be generated (must be < 1000) 
+    n_gen: How many expressions should be generated (must be < 1000) 
     difficulty: how long the equation is fx (a+b) vs (a+b+c+d)...
     exponent:the exponents of the links in the equation fx (a^2+a^3)
     numbers: the numbers that can be generated in the equation fx (23a+54-2) (min and max)
@@ -111,8 +111,8 @@ class EQGeneratorLITE():
                  unique=True,
                  reducible=True):
         """
-        This function are used to generate multiple equations
-        :type int     :param n_gen: how many equations should be generated
+        This function are used to generate multiple expressions
+        :type int     :param n_gen: how many expressions should be generated
         :type tuple   :param difficulty: (min n, max n)
         :type tuple   :param exponent: min n, max n)
         :type tuple   :param numbers: (min n, max n)
@@ -122,12 +122,12 @@ class EQGeneratorLITE():
         :type tuple   :param char_amount: = (min n, max n)
         :type tuple   :param char_allowed: = ['a','b'.....]
         :type tuple   :param division_operators: = (min n, max n)
-        :type boolean :param unique: This ensures that all equations are unique
-        :type boolean :param reducible: This ensures that all equations are reducible
-        :return: list of all the equations
+        :type boolean :param unique: This ensures that all expressions are unique
+        :type boolean :param reducible: This ensures that all expressions are reducible
+        :return: list of all the expressions
         """
         if n_gen > 1000:
-            raise ValueError("You are only allowed to generate 1000 equations per api call.")
+            raise ValueError("You are only allowed to generate 1000 expressions per api call.")
 
         # Converting the tuple to a string
         char_allowed = ''.join(str(c) for c in char_allowed)
